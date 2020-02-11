@@ -11,7 +11,19 @@ namespace TextVenture
 
             NormalText defaultText = new NormalText(50);
             defaultText.Text("Hi there young one, how are you doing?");
+            defaultText.Text("Nevermind, lets get on with it! who are you again?");
+            testinglol();
+            void testinglol(){
+            
+                Player currentPlayer = new Player();
+            Console.ReadLine(currentPlayer.name);
+            defaultText.Text(currentPlayer.name);
+                
 
+            }
+            
+
+            
             defaultText.Text("Now with colors!", ConsoleColor.Red);
             defaultText.Text("And even more colors", ConsoleColor.Blue);
 

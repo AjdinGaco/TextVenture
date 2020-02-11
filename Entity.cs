@@ -9,7 +9,7 @@ namespace TextVenture
     abstract class Entity
     {
         //This is the main aspect of any entity that may or may not exist in the game
-        String name;
+        public String name;
         Location location;
         Skill skillBook;
         List<Item> inventory = new List<Item>();
