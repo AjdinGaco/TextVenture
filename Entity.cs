@@ -63,5 +63,10 @@ namespace TextVenture
             this.MPmax = 10;
             this.Reset();
         }
+
+        public void PlayerNameChoicer(){
+            Console.ReadLine(currentPlayer.name);
+            defaultText.Text(currentPlayer.name);
+        }
     }
 }
