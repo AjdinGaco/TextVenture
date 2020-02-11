@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace TextVenture
 {
@@ -10,6 +7,15 @@ namespace TextVenture
     {
         static void Main(string[] args)
         {
+            Normal fancytext = new Normal();
+            fancytext.Text("Hi there young one, how are you doing?");
+
+
+
+
+            Console.ReadKey();
         }
+
+
     }
 }
