@@ -7,8 +7,8 @@ namespace TextVenture
     {
         static void Main(string[] args)
         {
-            Normal fancytext = new Normal();
-            fancytext.Text("Hi there young one, how are you doing?");
+            Normal defaultText = new Normal();
+            defaultText.Text("Hi there young one, how are you doing?");
 
 
 
