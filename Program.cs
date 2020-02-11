@@ -6,6 +6,9 @@ namespace TextVenture
     {
         static void Main(string[] args)
         {
+            //here i have to set vars to make the map data and all other stuff posible
+
+
             NormalText defaultText = new NormalText(50);
             defaultText.Text("Hi there young one, how are you doing?");
 
