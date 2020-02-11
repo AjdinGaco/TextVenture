@@ -26,6 +26,7 @@ namespace TextVenture
                 Console.Write(cher);
                 if (Console.KeyAvailable)
                 {
+                    int origX = Console.CursorLeft, origY = Console.CursorTop;
                     _key = Console.ReadKey();
                     switch (_key.Key)
                     {
@@ -35,6 +36,7 @@ namespace TextVenture
                         default:
                             break;
                     }
+                    Console.SetCursorPosition(origX,origY);
 
                 }
                 Thread.Sleep(tempspeed);
