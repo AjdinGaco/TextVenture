@@ -65,8 +65,10 @@ namespace TextVenture
         }
 
         public void PlayerNameChoicer(){
-            Console.ReadLine(currentPlayer.name);
-            defaultText.Text(currentPlayer.name);
+            do{
+                this.name = Console.ReadLine();
+            } while (this.name == null);
+            
         }
     }
 }

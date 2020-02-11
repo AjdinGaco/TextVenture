@@ -13,7 +13,9 @@ namespace TextVenture
             NormalText defaultText = new NormalText(50);
             defaultText.Text("Hi there young one, how are you doing?");
             defaultText.Text("Nevermind, lets get on with it! who are you again?");
+            defaultText.Text("Fill in your name:");
             currentPlayer.PlayerNameChoicer();
+            defaultText.Text("Hello there," + currentPlayer.name + " big daventure awaits you");
 
             defaultText.Text("Now with colors!", ConsoleColor.Red);
             defaultText.Text("And even more colors", ConsoleColor.Blue);
