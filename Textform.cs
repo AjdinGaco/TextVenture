@@ -20,26 +20,28 @@ namespace TextVenture
             ConsoleColor originalcolor = Console.ForegroundColor;
             Console.ForegroundColor = _color;
             char[] charArr = _input.ToCharArray();
-
+            ConsoleKeyInfo _key;
             foreach (Char cher in charArr)
             {
                 Console.Write(cher);
-                Thread.Sleep(_delay);
-            }
-            ConsoleKeyInfo _key;
-            if (Console.KeyAvailable)
-            {
-                _key = Console.ReadKey();
-                switch (_key.Key)
+                if (Console.KeyAvailable)
                 {
-                    case (ConsoleKey.Enter):
-                        tempspeed = tempspeed/10;
-                        break;
-                    default:
-                        break;
-                }
+                    _key = Console.ReadKey();
+                    switch (_key.Key)
+                    {
+                        case (ConsoleKey.Enter):
+                            tempspeed = tempspeed / 10;
+                            break;
+                        default:
+                            break;
+                    }
 
+                }
+                Thread.Sleep(tempspeed);
             }
+
+
+
             Console.ForegroundColor = originalcolor;
             Console.WriteLine();
         }
