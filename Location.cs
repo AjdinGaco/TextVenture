@@ -10,7 +10,5 @@ namespace TextVenture
     {
         List<Location> connectedLocations = new List<Location>();
         List<Entity> entities = new List<Entity>();
-
-
     }
 }

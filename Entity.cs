@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace TextVenture
 {
@@ -8,9 +12,10 @@ namespace TextVenture
         String name;
         Location location;
         Skill skillBook;
+        List<Item> inventory = new List<Item>();
 
-        int HP, SP, MP;
-        int HPmax, SPmax, MPmax;
+        public int HP, SP, MP;
+        public int HPmax, SPmax, MPmax;
         bool Dead = false;
         public void Reset()
         {
@@ -53,6 +58,9 @@ namespace TextVenture
     {
         public Player()
         {
+            this.HPmax = 10;
+            this.SPmax = 10;
+            this.MPmax = 10;
             this.Reset();
         }
     }
